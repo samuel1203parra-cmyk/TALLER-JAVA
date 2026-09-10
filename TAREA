@@ -22,6 +22,8 @@ public class Tarea {
 
     private String estado; 
 
+    private String fechadecreacion;
+
  
 
     // ── ESTADOS PERMITIDOS (constante de clase) ───── 
@@ -41,6 +43,8 @@ public class Tarea {
         this.nombre      = nombre; 
 
         this.responsable = responsable; 
+
+        this.fechadecreacion = "sin fecha";
 
         this.estado      = PENDIENTE;   // valor por defecto 
 
