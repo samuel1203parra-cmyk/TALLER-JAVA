@@ -1,0 +1,51 @@
+package gestionproyectos; 
+
+ 
+
+/** 
+
+ * Clase que representa una Tarea dentro de un Proyecto. 
+
+ * Aplica encapsulamiento: todos los atributos son privados. 
+
+ */ 
+
+public class Tarea { 
+
+ 
+
+    // ── ATRIBUTOS PRIVADOS ────────────────────────── 
+
+    private String nombre; 
+
+    private String responsable; 
+
+    private String estado; 
+
+ 
+
+    // ── ESTADOS PERMITIDOS (constante de clase) ───── 
+
+    public static final String PENDIENTE    = "pendiente"; 
+
+    public static final String EN_PROGRESO  = "en progreso"; 
+
+    public static final String TERMINADA    = "terminada"; 
+
+ 
+
+    // ── CONSTRUCTOR ───────────────────────────────── 
+
+    public Tarea(String nombre, String responsable) { 
+
+        this.nombre      = nombre; 
+
+        this.responsable = responsable; 
+
+        this.estado      = PENDIENTE;   // valor por defecto 
+
+    } 
+
+ 
+
+} 
